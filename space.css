@@ -430,6 +430,9 @@ button:hover {
   grid-template-columns: 2fr 1fr 2fr 1fr;
   grid-gap: 2rem;
 }
+.footer span {
+  color: #609966;
+}
 
 .footer-about{
   /* background-color: #10c722; */
