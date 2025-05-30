@@ -439,12 +439,21 @@ button:hover {
 /* .footer-about-icons{
   background-color: #609966;
 } */
-.footer-about-icons img{
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #609966;
-  margin: .5rem;
+.footer-about-icons {
+display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  /* background-color: #609966; */
+}
+
+.footer-about-icons a i{
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.footer-about-icons a:hover::after{
+  width: 0%;
 }
 .footer-about-icons img:hover{
   transform: none;
@@ -496,6 +505,12 @@ button:hover {
   /* background-color: #10c722; */
   display: flex;
   gap: 1rem;
+  align-items: center;
+  justify-content: start;
+}
+
+#footer-con p{
+  margin-bottom: 0;
 }
 
 #footer-2-para{
@@ -539,8 +554,8 @@ button:hover {
 /* 800PX */
 @media screen and (max-width: 800px) {
   .top-of-web {
-    grid-template-columns: 1fr;
-    grid-gap: .5rem;
+    display: none;
+
   }
   .top-of-web img:hover {
     transform: none;
